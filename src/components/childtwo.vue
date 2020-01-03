@@ -14,7 +14,6 @@ export default {
   watch: {
     wordNew: {
       handler() {
-        console.log(this.$eventHub);
         this.$eventHub.$on("put", dataFrom => {
           this.wordNew = dataFrom;
         });
